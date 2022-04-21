@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="REGISTRATION FORM"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:gravity="center_horizontal"
+        android:textSize="22dp"
+        android:id="@+id/txtReg"
+        android:padding="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtFirstName"
+        android:backgroundTint="@color/white"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:text="prem"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:hint="Enter First Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtReg" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:text="Prem"
+        android:id="@+id/edtUsername"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:padding="20dp"
+        android:hint="Enter user name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtFirstName"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEmail"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="7dp"
+        android:padding="20dp"
+        android:textColorHint="@color/white"
+        android:hint="Enter Email ID"
+        android:backgroundTint="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtUsername"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMob"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="7dp"
+        android:padding="20dp"
+        android:backgroundTint="@color/white"
+        android:hint="Enter Mobile Number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPassword"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:layout_marginTop="7dp"
+        android:padding="20dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Enter Password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtMob"
+        />
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="@color/blue"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:id="@+id/btnSave"-->
+<!--        android:text="Save"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:padding="20dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edtPassword"-->
+    android:text="Prem@1"
+    android:text="8899663322"
+    android:text="prempanchal@gmail.com"
+<!--        />-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword"
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

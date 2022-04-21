@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".logout">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtFirstName"
+        android:layout_width="0dp"
+        android:text="First Name"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtLastName"
+        android:layout_width="0dp"
+        android:text="ID"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstName"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPhoneNo"
+        android:layout_width="0dp"
+        android:text="Phone"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtPassword"
+        android:textColor="@color/white"
+        android:layout_width="0dp"
+        android:text="Password"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPhoneNo"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
+        android:id="@+id/btnLogout"
+        android:text="GO"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPassword"
+        android:textStyle="bold"/>
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="@drawable/custom_button"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:id="@+id/btndatePicker"-->
+<!--        android:text="Log out"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:padding="20dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/txtPassword"-->
+<!--        android:textStyle="bold"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Services">
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
+        android:id="@+id/btnPlay"
+        android:text="Play"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
+        android:id="@+id/btnPause"
+        android:text="Pause"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPlay"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
+        android:id="@+id/btnNext"
+        android:layout_marginTop="30dp"
+        android:padding="20dp"
+        android:text="Next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPause"
+
+        android:textStyle="bold"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
